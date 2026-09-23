@@ -284,13 +284,23 @@ remains anonymous and doesn't require being logged in.
 
 ## Screenshots
 
-  ### Landing page
+### Landing page
+![Landing Page](<Website Interface/Landing Page.png>)
 
+### Data
+![Data](<Website Interface/Data.png>)
 
-  ### Search results
+### Bangla Translation
+![Bangla Translation](<Website Interface/Bangla Translation.png>)
 
+### Search results
+![Search](<Website Interface/Search.png>)
 
-  ### Hospital detail
+### Hospital detail
+![Hospital Detail](<Website Interface/Hospital Details.png>)
 
+### Submit a report
+![Share your experience](<Website Interface/Share your experience.png>)
 
-  ### Submit a report
+### Admin Dashboard
+![Admin Dashboard](<Website Interface/Admin Dashboard.png>)
