@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "node --watch src/server.js",
     "start": "node src/server.js",
-    "seed": "node src/seed-cli.js"
+    "seed": "node src/seed-cli.js",
+    "reset-admin": "node src/reset-admin-cli.js"
   },
   "dependencies": {
     "better-sqlite3": "^11.3.0",
