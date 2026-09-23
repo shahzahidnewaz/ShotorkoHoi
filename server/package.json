@@ -1,0 +1,17 @@
+{
+  "name": "shotorko-server",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "ShotorkoHoi backend — Node/Express + SQLite, single local process, no external services.",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "seed": "node src/seed-cli.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.3.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}

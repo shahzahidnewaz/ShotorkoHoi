@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+    line-height: 1.55;
+  }
+  h1, h2, h3 {
+    @apply font-sans font-semibold leading-tight;
+  }
+  h1 { @apply text-3xl mb-2; }
+  h2 { @apply text-2xl mb-2; }
+  h3 { @apply text-lg mb-2; }
+  a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+    @apply outline outline-2 outline-teal outline-offset-2;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center gap-2 font-sans font-semibold text-sm px-4 py-2.5 rounded border cursor-pointer whitespace-nowrap transition-colors;
+  }
+  .btn-primary {
+    @apply btn bg-teal text-white border-transparent hover:bg-teal-dark;
+  }
+  .btn-secondary {
+    @apply btn bg-transparent text-teal border-teal hover:bg-teal-soft;
+  }
+  .btn-ghost {
+    @apply btn bg-transparent text-ink-soft border-hairline-strong hover:border-ink-soft hover:text-ink;
+  }
+  .field {
+    @apply w-full font-sans text-sm px-3 py-2.5 border border-hairline-strong rounded bg-white text-ink;
+  }
+  select.field {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 2.5rem;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23514E47' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px;
+  }
+  .pill {
+    @apply inline-block text-xs px-2.5 py-0.5 rounded-full bg-teal-soft text-teal font-semibold mr-1.5;
+  }
+  .pill-public {
+    @apply bg-green-soft text-green;
+  }
+  .tag-chip {
+    @apply text-xs px-2.5 py-1 border border-hairline-strong rounded-full text-ink-soft bg-white;
+  }
+  .unverified-badge {
+    @apply inline-flex items-center gap-1.5 text-xs font-semibold text-brick bg-brick-soft rounded-full pl-2 pr-2.5 py-1;
+  }
+  .unverified-badge::before {
+    content: "";
+    @apply w-1.5 h-1.5 rounded-full bg-brick inline-block;
+  }
+}
